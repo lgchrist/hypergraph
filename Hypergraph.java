@@ -124,11 +124,11 @@ public class Hypergraph<T, A>
     @Override
     public String toString()
     {
-        String graphS = "Hypergraph: ";
+        String graphS = "Hypergraph: \n";
         
         for(Hypernode<T, A> currNode: vertices)
         {
-            if(vertices.indexOf(currNode) != 0) graphS += ", [Vertex " + vertices.indexOf(currNode) + "]: ";
+            if(vertices.indexOf(currNode) != 0) graphS += "[Vertex " + vertices.indexOf(currNode) + "]: ";
             else graphS += "[Vertex " + vertices.indexOf(currNode) + "]: ";
             graphS += "(data: " + currNode.data + " / ";
             graphS += "out edges: ";

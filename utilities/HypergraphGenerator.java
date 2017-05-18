@@ -53,7 +53,7 @@ public class HypergraphGenerator<T, A>
 		Random gen = new Random();
 
 		//the parameter of nextInt() can be changed to adjust how many edges are allowed
-		int numEdges = gen.nextInt(10);
+		int numEdges = gen.nextInt(10000);
 
 		HyperedgeGenerator edgeGen = new HyperedgeGenerator(randomHG);
 
